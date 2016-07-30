@@ -1,0 +1,54 @@
+.welcome {
+  overflow: hidden;
+  background: #eee;
+
+  h1 {
+    margin: 1em 0 0;
+  }
+
+  img {
+    float: right;
+    width: 120px;
+    height: 160px;
+  }
+}
+
+.teams {
+  display: flex;
+  flex-flow: row wrap;
+
+  header {
+
+  }
+
+  img {
+    float: left;
+    max-width: 80px;
+    max-height: 120px;
+    margin-left: calc(-80px - 1rem);
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  > div {
+    width: calc(50% - 2rem - 1px);
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+
+    header {
+      padding-left: calc(1rem + 80px);
+      min-height: 120px;
+    }
+  }
+}
